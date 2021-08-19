@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>OPML Validator</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//s3.amazonaws.com/scripting.com/code/includes/jquery-1.9.1.min.js"></script>
+<link href="//s3.amazonaws.com/scripting.com/code/includes/bootstrap.css" rel="stylesheet">
+<script src="//s3.amazonaws.com/scripting.com/code/includes/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="//s3.amazonaws.com/scripting.com/code/fontawesome/css/all.css">
+<link href="//fonts.googleapis.com/css?family=Ubuntu:400,500i,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+
+<script src="//s3.amazonaws.com/scripting.com/code/includes/basic/code.js"></script>
+<link href="//s3.amazonaws.com/scripting.com/code/includes/basic/styles.css" rel="stylesheet" type="text/css">
+
+		<script src="http://fargo.io/code/browsers/riverbrowser.js"></script>
+		<script src="http://fargo.io/code/shared/xml.js"></script>
+		<script src="http://fargo.io/code/shared/reader.js"></script>
+		<script src="code.js"></script>
+		<style>
+			body {
+				font-family: Ubuntu;
+				font-size: 18px;
+				background-color: whitesmoke;
+				}
+			.divPageBody {
+				width: 60%;
+				margin-top: 90px;
+				margin-left: auto;
+				margin-right: auto;
+				}
+			.divPrompt {
+				margin-top: 1em;
+				margin-bottom: .5em;
+				margin-left: 5px;
+				}
+			input[type="text"] {
+				font-family: "Ubuntu";
+				font-size: 18px;
+				padding: 5px;
+				width: 100%;
+				height: 2em;
+				display: block;
+				}
+			.divValidatorDialog {
+				width: 80%;
+				}
+			.btnValidate {
+				float: right;
+				font-family: "Ubuntu";
+				font-size: 16px;
+				}
+			.divValidationMessage {
+				margin-top: 60px;
+				}
+			.divValidationMessage p {
+				line-height: 140%;
+				}
+			.spValidatedImage {
+				margin-left: .5em;
+				}
+			.divOutlineForDisplay {
+				margin-top: 20px;
+				border: 1px solid silver;
+				background-color: white;
+				padding-left: 30px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				visibility: hidden;
+				}
+			.divOutlineForDisplay ul {
+				margin-left: 15px;
+				}
+			.divOutlineForDisplay .divOutlineText {
+				font-size: 17px;
+				line-height: 160%;
+				}
+			.divOutlineForDisplay .divOutlineHead .aOutlineTextLink {
+				color: black;
+				}
+			
+			.divValidationMessage ul {
+				list-style-type: none;
+				}
+			.divValidationMessage li {
+				font-weight: bold;
+				}
+			.divCode {
+				font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+				font-size: 14px;
+				margin-top: .5em;
+				margin-bottom: 1.3em;
+				}
+			</style>
+		</head>
+	<body>
+		<div class="divPageBody">
+			<h1>The OPML Validator</h1>
+			<div class="divValidatorDialog">
+				<div class="divPrompt">
+					Enter the URL of an OPML file you want to validate:
+					</div>
+				<input id="idUrlInput" type="text" name="url" placeholder="Enter the URL of your OPML file here.">
+				<button class="btn btnValidate btnPrimary" onclick="doValidate ()">
+					<i class='fa fa-check'></i> Validate
+					</button>
+				<div class="divValidationMessage" id="idValidationMessage">
+					</div>
+				<div class="divOutlineForDisplay" id="idOutlineForDisplay">
+					</div>
+				</div>
+			</div>
+		<script>
+			$(document).ready (function () {
+				startup ();
+				});
+			</script>
+		</body>
+	</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
+	<head>
+		<title>test/encoding.txt</title>
+		<dateModified>&lt;%dateModified%></dateModified>
+		<expansionState></expansionState>
+		<vertScrollState>1</vertScrollState>
+		<windowTop>300</windowTop>
+		<windowLeft>700</windowLeft>
+		<windowBottom>900</windowBottom>
+		<windowRight>1500</windowRight>
+		</head>
+	<body text="test/encoding.txt">
+		<outline text="&lt;?xml version=&quot;1.0&quot; encoding=&quot;ISO-8859-1&quot;?&gt;"></outline>
+		<outline text="&lt;opml version=&quot;2.0&quot;&gt;">
+			<outline text="&lt;head&gt;">
+				<outline text="&lt;title&gt;test/encoding.opml&lt;/title&gt;"></outline>
+				<outline text="&lt;dateModified&gt;Sat, 01 Oct 2016 22:26:24 GMT&lt;/dateModified&gt;"></outline>
+				<outline text="&lt;expansionState&gt;&lt;/expansionState&gt;"></outline>
+				<outline text="&lt;vertScrollState&gt;1&lt;/vertScrollState&gt;"></outline>
+				<outline text="&lt;windowTop&gt;300&lt;/windowTop&gt;"></outline>
+				<outline text="&lt;windowLeft&gt;700&lt;/windowLeft&gt;"></outline>
+				<outline text="&lt;windowBottom&gt;900&lt;/windowBottom&gt;"></outline>
+				<outline text="&lt;windowRight&gt;1500&lt;/windowRight&gt;"></outline>
+				<outline text="&lt;/head&gt;"></outline>
+				</outline>
+			<outline text="&lt;body&gt;">
+				<outline text="&lt;outline text=&quot;Hey &lt;a href=&amp;quot;http://scripting.com/2016/10/01/donaldTrumpAsCaptainQueeg.html&amp;quot;&amp;gt;this&amp;lt;/a&amp;gt; is a link.&quot;&gt;&lt;/outline&gt;"></outline>
+				<outline text="&lt;/body&gt;"></outline>
+				</outline>
+			<outline text="&lt;/opml&gt;"></outline>
+			</outline>
+		</body>
+	</opml>
