@@ -223,7 +223,7 @@ function doValidate () {
 								if (atts.xmlUrl === undefined) {
 									addError (this, opmlValidatorData.strings.rssNodeMustHaveXmlUrl)
 									}
-								if (atts.version === undefined) {
+								if (atts.version !== undefined) {
 									if ((atts.version != "RSS1") && (atts.version != "RSS2") && (atts.version != "RSS") && (atts.version != "scriptingNews")) {
 										addError (this, opmlValidatorData.strings.rssVersionWrong);
 										}
