@@ -1,3 +1,5 @@
+const myVersion = "0.4.1", myProductName = "opmlValidator"; 
+
 var opmlValidatorData = {
 	strings: {
 		congratulations: "Congratulations! Your OPML file validates.",
@@ -223,7 +225,7 @@ function doValidate () {
 								if (atts.xmlUrl === undefined) {
 									addError (this, opmlValidatorData.strings.rssNodeMustHaveXmlUrl)
 									}
-								if (atts.version === undefined) {
+								if (atts.version !== undefined) { //4/13/23 by DW
 									if ((atts.version != "RSS1") && (atts.version != "RSS2") && (atts.version != "RSS") && (atts.version != "scriptingNews")) {
 										addError (this, opmlValidatorData.strings.rssVersionWrong);
 										}
@@ -244,13 +246,7 @@ function doValidate () {
 								break;
 							}
 						}
-					
-					
-					
-					
-					
 					for (var attname in atts) {
-						console.log (attname);
 						if (nameNotInArray (attname, opmlValidatorData.legalAttributes.common) && nameNotInArray (attname, opmlValidatorData.legalAttributes [type])) {
 							addError (this, opmlValidatorData.strings.outlineUnknownAttribute + attname);
 							return (false);
@@ -309,9 +305,6 @@ function doValidate () {
 			});
 		
 		});
-	
-	
-	
 	}
 function everySecond () {
 	}
