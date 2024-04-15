@@ -1,4 +1,4 @@
-const myVersion = "0.4.1", myProductName = "opmlValidator"; 
+const myVersion = "0.4.2", myProductName = "opmlValidator"; 
 
 var opmlValidatorData = {
 	strings: {
@@ -289,7 +289,6 @@ function doValidate () {
 				requiredSubelement (adropml, "head", opmlValidatorData.strings.mustHaveHead, function (flGood, adrhead) {
 					requiredSubelement (adropml, "body", opmlValidatorData.strings.mustHaveBody, function (flGood, adrbody) {
 						checkOutlinesOutsideBody (adropml);
-						checkForUnencodedCharacters (adropml);
 						validateOutline (adrbody);
 						
 						if (cterrors == 0) {
