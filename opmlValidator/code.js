@@ -3,7 +3,7 @@ const myVersion = "0.4.2", myProductName = "opmlValidator";
 var opmlValidatorData = {
 	strings: {
 		congratulations: "Congratulations! Your OPML file validates.",
-		validatedImage: "<img src=\"http://images.scripting.com/archiveScriptingCom/2005/10/31/valid3.gif\" width=\"114\" height=\"20\" border=\"0\" alt=\"OPML checked by validator.opml.org.\">",
+		validatedImage: "<img src=\"https://imgs.scripting.com/2024/06/09/validOpml.gif\" width=\"114\" height=\"20\" border=\"0\" alt=\"OPML checked by validator.opml.org.\">",
 		notValidXml: "The text in the file is not valid XML. You can use an <a href=\"http://www.google.com/search?q=xml+validator\" target=\"blank\">XML validator</a> first to find and fix the problems, then try again with the OPML Validator.",
 		mustHaveOpml: "The top level-element in an OPML document must be named opml.",
 		opmlVersionMustBe: "The \"version\" attribute for the opml element must be 1.0, 1.1 or 2.0.",

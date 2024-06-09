@@ -1,3 +1,7 @@
+#### 6/8/24; 10:14:10 AM by DW
+
+When I moved it to an HTTPS server, I didn't update the includes to also use HTTPS.
+
 #### 4/15/24; 10:35:05 AM by DW
 
 We were flagging legal uses of & and < as errors. No longer doing that. 
